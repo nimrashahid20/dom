@@ -19,14 +19,17 @@ paraghraph[1].style.fontSize = "30px"
 paraghraph[1].innerHTML = "nimra"
 
 
+let collection = document.getElementsByTagName("li")
+document.getElementById("demo").innerHTML= collection[0].innerHTML
+
+collection[1].style.fontSize = "30px"
+collection[1].style.color = "navy"
 
 
-
-
-
-
-
-
+function ChangeColor(newColor){
+    let btn = document.getElementById("para2");
+    btn.style.color = newColor
+}
 
 
 
